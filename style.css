@@ -1,0 +1,30 @@
+body {
+	line-height:1.4;
+	background:#42413a;
+	color:#fff;
+}
+a {
+	color:#fff;
+}
+#wrapper {
+	font-family:monospace;
+	padding:5em;
+	display: flex;
+	max-width: 80em;
+}
+#menu {
+	width:20%;
+	padding:5em 1em;
+	min-width: fit-content;
+}
+#content {
+	width:80%;
+}
+#content > p
+{
+	padding:0 0 0 1em;
+}
+#menu > ol {
+	list-style-type: none;
+	padding:0 0 0 1em;
+}
