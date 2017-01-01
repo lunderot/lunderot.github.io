@@ -37,6 +37,13 @@ table tr td:first-child{
 	top:0.25em;
 }
 @media print {
+	#wrapper {
+		padding: 0;
+	}
+	.body
+	{
+		line-height:1;
+	}
 	#menu, .noprint
 	{
 		display:none;
