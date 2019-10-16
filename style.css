@@ -25,7 +25,7 @@ h2 {
 	width: 60vw;
 	padding-right: 20vw;
 }
-#content p, #content table, #content img
+#content p, #content table, #content img:not(.email)
 {
 	padding:0 0 0 1em;
 }
@@ -40,7 +40,7 @@ table tr td:first-child{
 	list-style-type: none;
 	padding:0 0 0 1em;
 }
-.email, .phone {
+.email {
 	height:1em;
 	position:relative;
 	top:0.25em;
@@ -72,9 +72,6 @@ table tr td:first-child{
 	}
 	.email {
 		content:url("https://lunderot.se/images/email_print.svg");
-	}
-	.phone {
-		content:url("https://lunderot.se/images/phone_print.svg");
 	}
 }
 .videowrapper {
