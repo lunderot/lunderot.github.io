@@ -1,93 +1,99 @@
 body {
-	line-height:1.4;
-	background:#1b1b1e;
-	color:#fbfffe;
-	font-size: 1rem;
+  line-height: 1.4;
+  background: #1b1b1e;
+  color: #fbfffe;
+  font-size: 1rem;
 }
 a {
-	color:#fbfffe;
+  color: #fbfffe;
 }
 #content a {
-	color:#ffbc42;
+  color: #ffbc42;
 }
 h2 {
-	border-bottom: thin solid #ffbc42;
+  border-bottom: thin solid #ffbc42;
 }
 #wrapper {
-	font-family: "Arial";
-	padding: 5em;
-	display: flex;
+  font-family: "Arial";
+  padding: 5em;
+  display: flex;
 }
 #menu {
-	width: 20vw;
+  width: 20vw;
 }
 #content {
-	width: 60vw;
-	padding-right: 20vw;
+  width: 60vw;
+  padding-right: 20vw;
 }
-#content p, #content table, #content img:not(.email)
-{
-	padding:0 0 0 1em;
+#content p,
+#content table,
+#content img:not(.email) {
+  padding: 0 0 0 1em;
 }
-#content .videowrapper iframe
-{
-	margin:0 0 0 1em;
+#content .videowrapper iframe {
+  margin: 0 0 0 1em;
 }
-table tr td:first-child{
-	width: 10em;
+table tr td:first-child {
+  width: 10em;
 }
 #menu > ol {
-	list-style-type: none;
-	padding:0 0 0 1em;
+  list-style-type: none;
+  padding: 0 0 0 1em;
 }
 .email {
-	height:1em;
-	position:relative;
-	top:0.25em;
+  height: 1em;
+  position: relative;
+  top: 0.25em;
 }
 @media print {
-	#wrapper {
-		padding: 0;
-	}
-	.body
-	{
-		line-height:1;
-	}
-	#menu, .noprint
-	{
-		display:none;
-	}
-	h2 {
-		margin: 0;
-	}
-	a {
-		color:#000;
-	}
-	a:after {
-		content:" (" attr(href) ") ";
-	}
-	#content {
-		color: #000;
-		width:100%;
-	}
-	.email {
-		content:url("https://lunderot.se/images/email_print.svg");
-	}
+  #wrapper {
+    padding: 0;
+  }
+  .body {
+    line-height: 1;
+  }
+  #menu,
+  .noprint {
+    display: none;
+  }
+  h2 {
+    margin: 0;
+  }
+  a {
+    color: #000;
+  }
+  a:after {
+    content: " (" attr(href) ") ";
+  }
+  #content {
+    color: #000;
+    width: 100%;
+  }
+  .email {
+    content: url("https://lunderot.se/images/email_print.svg");
+  }
 }
 .videowrapper {
-    float: none;
-    clear: both;
-    width: calc(100% - 1em);
-    height: 0;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 0px;
+  float: none;
+  clear: both;
+  width: calc(100% - 1em);
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
 }
 .videowrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#content > img {
+  width: 50%;
+  max-height: 100%;
+}
+.imagecontainer img {
+	width: auto;
 }
