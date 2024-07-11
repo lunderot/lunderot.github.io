@@ -17,7 +17,7 @@ h2 {
   font-family: "Arial";
   margin: 5em;
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 0 5em;
 }
 #menu {
@@ -49,6 +49,8 @@ table tr td:first-child {
 @media print {
   #wrapper {
     padding: 0;
+    margin: 0;
+    font-size: 1rem;
   }
   .body {
     line-height: 1;
@@ -57,8 +59,9 @@ table tr td:first-child {
   .noprint {
     display: none;
   }
-  h2 {
+  h2, h3 {
     margin: 0;
+    font-size: 1.1rem;
   }
   a {
     color: #000;
