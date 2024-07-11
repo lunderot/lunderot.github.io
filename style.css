@@ -22,6 +22,29 @@ h2 {
 }
 #menu {
   flex: 1;
+  display: flex;
+  align-items: flex-start;
+  height: min-content;
+  flex-direction: column;
+}
+#menu h3 {
+  white-space: nowrap;
+  margin: 0;
+}
+#menu ol {
+  list-style-type: none;
+  padding: 0 0 0 1em;
+  white-space: nowrap;
+  margin: 0;
+}
+@media screen and (orientation:portrait) {
+  #wrapper {
+    margin: 5em 1em;
+    flex-direction: column;
+  }
+  #menu {
+    flex-direction: row;
+  }
 }
 #content {
   flex: 6;
@@ -36,10 +59,6 @@ h2 {
 }
 table tr td:first-child {
   width: 10em;
-}
-#menu > ol {
-  list-style-type: none;
-  padding: 0 0 0 1em;
 }
 .email {
   height: 1em;
